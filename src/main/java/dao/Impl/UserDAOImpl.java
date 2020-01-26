@@ -4,7 +4,6 @@ import dao.AbstractDao;
 import dao.UserDAO;
 import model.User;
 
-import javax.persistence.NoResultException;
 import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import java.util.HashSet;

@@ -2,9 +2,6 @@ package controllers.servlets;
 
 
 import controllers.errors.ValidationError;
-
-import static controllers.utils.ServletsUtils.*;
-
 import model.User;
 import services.UserManagementService;
 import services.impl.UserManagementServiceImpl;
@@ -17,6 +14,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static controllers.utils.ServletsUtils.*;
 
 
 @WebServlet(name = "RegisterServlet", value = "/register")

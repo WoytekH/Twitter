@@ -3,7 +3,6 @@ package services.impl;
 import dao.Impl.TweetDAOImpl;
 import dao.Impl.UserDAOImpl;
 import dao.TweetDAO;
-
 import dao.UserDAO;
 import model.Tweet;
 import model.User;

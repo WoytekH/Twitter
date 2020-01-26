@@ -7,13 +7,13 @@ import java.util.List;
 
 public interface TweetDAO {
 
-    void addTweet (User user, String message);
+    void addTweet(User user, String message);
 
-    void updateTweet (Long tweetId, String message);
+    void updateTweet(Long tweetId, String message);
 
-    void deleteTweet (Long tweetId);
+    void deleteTweet(Long tweetId);
 
-    List<Tweet> getUserTweets (String userLogin);
+    List<Tweet> getUserTweets(String userLogin);
 
 
 
