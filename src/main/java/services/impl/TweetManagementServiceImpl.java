@@ -36,7 +36,7 @@ public class TweetManagementServiceImpl implements TweetManagementService {
     }
 
     @Override
-    public Set<Tweet> getFollowedTweets(String userLogin) {
+    public Set<Tweet> getFollowedTweets(String userLogin) { //robi seta i zwraca wszystkie twity
         Set<Tweet> tweets = new HashSet<>();
         User user = userDAO.getUserByLogin(userLogin);
         tweets.addAll(tweetDAO.getUserTweets(userLogin));
@@ -44,3 +44,11 @@ public class TweetManagementServiceImpl implements TweetManagementService {
         return tweets;
     }
 }
+  /*  @Override
+    public Set<Tweet> getFollowedTweets(String userLogin) { //robi seta i zwraca wszystkie twity
+        Set<Tweet> foolowedTweets = new HashSet<>();
+        Set<User> follows = userDAO.getFollows(userLogin);
+        foolowedTweets.addAll(tweetDAO.getUserTweets(userLogin));
+        follows.stream().forEach(p -> foolowedTweets.addAll(tweetDAO.getUserTweets(p.getLogin())));
+        return foolowedTweets;
+    }*/
